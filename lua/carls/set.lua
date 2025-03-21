@@ -1,4 +1,5 @@
 vim.opt.guicursor = ""
+vim.opt.timeoutlen = 500
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
