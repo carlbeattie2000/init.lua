@@ -21,7 +21,7 @@ local options = {
       settings = {
         Lua = {
           runtime = {
-            version = "5.1"
+            version = "Lua 5.1"
           },
           workspace = {
             checkThirdParty = false,
@@ -46,7 +46,6 @@ local options = {
         },
       },
     },
-    ts_ls = {}
   },
 }
 

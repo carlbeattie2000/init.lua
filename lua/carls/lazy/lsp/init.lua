@@ -14,8 +14,9 @@ return {
       "stevearc/conform.nvim",
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
+      "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
     },
-    opts = options,
+    opts = require("carls.lazy.lsp.options"),
     config = config.setup,
   },
 }

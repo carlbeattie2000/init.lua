@@ -76,6 +76,17 @@ M.on_attach.keybinds = function(e)
     { buffer = e.buf, desc = "Goto next diagnostics" })
   vim.keymap.set("n", "]d", function() vim.diagnostic.jump({ count = -1, float = true }) end,
     { buffer = e.buf, desc = "Goto previous diagnostics" })
+
+  -- Pulled this one from TJ
+  vim.keymap.set("", "<leader>l", function()
+    local config = vim.diagnostic.config() or {}
+    vim.print(config)
+    if config.virtual_text then
+      vim.diagnostic.config { virtual_text = false, virtual_lines = true }
+    else
+      vim.diagnostic.config { virtual_text = true, virtual_lines = false }
+    end
+  end, { desc = "Toggle lsp_lines" })
 end
 
 return M
