@@ -4,6 +4,7 @@ local options = require 'carls.lazy.lsp.options'
 return {
   {
     "neovim/nvim-lspconfig",
+    tag = "v1.7.0",
     dependencies = {
       { import = "carls.lazy.lsp.lazy-dev" },
       { import = "carls.lazy.lsp.blink-cmp" },

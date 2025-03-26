@@ -11,7 +11,7 @@ local options = {
       focusable = false,
       style = "minimal",
       border = "rounded",
-      source = "if_many",
+      source = "always",
       header = "",
       prefix = "",
     }
@@ -46,13 +46,7 @@ local options = {
         },
       },
     },
-    ts_ls = {
-      settings = {
-        inlayHints = {
-          parameterNames = { enabled = "literals" },
-        }
-      }
-    }
+    ts_ls = {}
   },
 }
 
