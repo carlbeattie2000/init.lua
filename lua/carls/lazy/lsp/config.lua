@@ -5,7 +5,12 @@ local M = {}
 M.setup = function(_, opts)
   require('mason').setup {}
   require('fidget').setup {}
-  require('conform').setup {}
+  require('conform').setup {
+    formatters_by_ft = {
+      lua = { "stylua" },
+      javascript = { "prettierd", "prettier", stop_after_first = true }
+    }
+  }
 
   autocmds.on_attach.setup()
 

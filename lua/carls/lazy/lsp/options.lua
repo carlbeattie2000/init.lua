@@ -4,6 +4,7 @@ local options = {
       source = "if_many",
       prefix = "●"
     },
+    virtual_lines = false,
     severity_sort = true,
     underline = false,
     update_in_insert = false,
