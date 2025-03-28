@@ -28,4 +28,8 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>", { desc = "Goto previous quick fix
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", { desc = "Next location list item and center" })
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Previous location list item and center" })
 
-vim.keymap.set("n", "<leader><leader>", function() vim.cmd("so") end, { desc = "Source Current Buffer" })
+vim.keymap.set("n", "<C-z>", "ea", { desc = "Goes to end of word and enters insert mode" })
+
+vim.keymap.set("n", "<leader><leader>", function()
+	vim.cmd("so")
+end, { desc = "Source Current Buffer" })
