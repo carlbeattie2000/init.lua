@@ -33,3 +33,5 @@ vim.keymap.set("n", "<C-z>", "ea", { desc = "Goes to end of word and enters inse
 vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end, { desc = "Source Current Buffer" })
+
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

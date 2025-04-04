@@ -1,4 +1,3 @@
--- Staying here until I feel as if I have stepped up a level with motions
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
