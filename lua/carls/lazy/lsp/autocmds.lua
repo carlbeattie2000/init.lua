@@ -99,7 +99,6 @@ M.on_attach.keybinds = function(e)
 	-- Pulled this one from TJ
 	vim.keymap.set("", "<leader>l", function()
 		local config = vim.diagnostic.config() or {}
-		vim.print(config)
 		if config.virtual_text then
 			vim.diagnostic.config({ virtual_text = false, virtual_lines = true })
 		else

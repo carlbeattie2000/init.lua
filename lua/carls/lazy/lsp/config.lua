@@ -15,6 +15,7 @@ M.setup = function(_, opts)
 			lua = { "stylua" },
 			javascript = { "prettierd", "prettier", stop_after_first = true },
 			sh = { "beautysh" },
+			python = { "black" },
 		},
 	})
 
